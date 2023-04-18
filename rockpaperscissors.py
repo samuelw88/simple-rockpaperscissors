@@ -35,4 +35,14 @@ while True:
         print("You Lost!")
         computer_wins += 1
 
-print(f"Your wins: {user_wins}\nComputer wins: {computer_wins}\nGoodbye!")
+file = open("wins.txt", "r")
+currentwins = file.read()
+newtotalwins = user_wins + int(currentwins)
+file.close()
+
+file = open("wins.txt", "w")
+file.write(str(newtotalwins))
+file.close
+
+print(f"Your wins in current game: {user_wins}\nComputer wins in current game: {computer_wins}")
+print(f"Total wins: {newtotalwins}")
