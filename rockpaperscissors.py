@@ -20,19 +20,19 @@ while True:
     print("Computer picked", computer_answer)
 
     if user_answer == "R" and computer_answer == "S":
-        print("You win!")
+        print("You win")
         user_wins += 1
         continue
     elif user_answer == "P" and computer_answer == "R":
-        print("You win!")
+        print("You win")
         user_wins += 1
         continue
     elif user_answer == "S" and computer_answer == "P":
-        print("You win!")
+        print("You win")
         user_wins += 1
         continue
     else:
-        print("You Lost!")
+        print("You Lost")
         computer_wins += 1
 
 file = open("wins.txt", "r")
