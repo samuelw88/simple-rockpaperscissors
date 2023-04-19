@@ -44,5 +44,5 @@ file = open("wins.txt", "w")
 file.write(str(newtotalwins))
 file.close
 
-print(f"Your wins in current game: {user_wins}\nComputer wins in current game: {computer_wins}")
+print(f"Your wins in the current game: {user_wins}\nComputer wins in the current game: {computer_wins}")
 print(f"Total wins: {newtotalwins}")
