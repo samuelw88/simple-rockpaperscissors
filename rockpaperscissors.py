@@ -12,7 +12,7 @@ while True:
 
     if user_answer not in ["R", "P", "S"]:
         continue
-        # if input isn't one of those, ends current iteration and moves onto next
+        # if input isn't one of those, ends current iteration and moves onto next (repeating essentially)
 
     random_num_generator = random.randint(0, 2)
     # rock - 0, paper - 1, scissors - 2
